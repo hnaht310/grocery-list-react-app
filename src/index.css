@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./grocery-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 56rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.25rem;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  flex: 1 0 auto;
+  font-size: 1.6rem;
+}
+.submit-btn {
+  background-color: #cdd9b3;
+  border: none;
+  flex: 0 0 5rem;
+  border-radius: 0.2rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #9bb266;
+  color: #fff;
+}
+
+.single-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #00e600;
+}
+.edit-btn:hover {
+  color: #00cc00;
+}
+
+.delete-btn {
+  color: #ff0000;
+}
+.delete-btn:hover {
+  color: #cc0000;
+}
+
+.clear-all-btn {
+  font-size: 1.6rem;
+  border: none;
+  color: #cc0000;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+  background-color: transparent;
+}
+
+.clear-all-btn:hover {
+  color: #b80000;
+}
+
+.alert {
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+}
+
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
